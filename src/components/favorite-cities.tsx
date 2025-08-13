@@ -1,10 +1,10 @@
 // src/components/weather/favorite-cities.tsx
 import { useNavigate } from "react-router-dom";
-import { useWeatherQuery } from "@/hooks/use-weather";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { useWeatherQuery } from "../hooks/use-weather";
+import { ScrollArea, ScrollBar } from "../components/ui/scroll-area";
 import { X, Loader2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { useFavorites } from "@/hooks/use-favorite";
+import { Button } from "../components/ui/button";
+import { useFavorites } from "../hooks/use-favorite";
 import { toast } from "sonner";
 
 interface FavoriteCityTabletProps {
