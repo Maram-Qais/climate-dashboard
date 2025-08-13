@@ -1,13 +1,13 @@
 import { useParams, useSearchParams } from "react-router-dom";
-import { useWeatherQuery, useForecastQuery } from "@/hooks/use-weather";
-import { Alert, AlertDescription } from "@/components/ui/alert";
+import { useWeatherQuery, useForecastQuery } from "../hooks/use-weather";
+import { Alert, AlertDescription } from "../components/ui/alert";
 import { AlertTriangle } from "lucide-react";
 import { CurrentWeather } from "../components/current-weather";
 import { HourlyTemperature } from "../components/hourly-temprature";
 import { WeatherDetails } from "../components/weather-details";
 import { WeatherForecast } from "../components/weather-forecast";
 import WeatherSkeleton from "../components/loading-skeleton";
-import { FavoriteButton } from "@/components/favorite-button";
+import { FavoriteButton } from "../components/favorite-button";
 
 export function CityPage() {
   const [searchParams] = useSearchParams();
