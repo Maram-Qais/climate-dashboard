@@ -17,6 +17,9 @@ import {
 import { Button } from "./ui/button";
 import { useFavorites } from "../hooks/use-favorite";
 
+
+
+
 export function CitySearch() {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
